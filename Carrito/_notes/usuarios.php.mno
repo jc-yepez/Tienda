@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_rsUsuarios" value="name:login;datatype:string,name:nombre;datatype:string,name:clave;datatype:string,name:perfil;datatype:string" />
-</info>

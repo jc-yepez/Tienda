@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<info>
-	<infoitem key="UD_rsCompras" value="name:codigo_producto;datatype:int,name:nombre;datatype:string,name:precio;datatype:real,name:descripcion;datatype:string,name:foto;datatype:string" />
-	<infoitem key="UD_rsClientes" value="name:CED_CLI;datatype:string,name:NOM_CLI;datatype:string,name:APE_CLI;datatype:string,name:DIR_CLI;datatype:string,name:EMAIL_CLI;datatype:string,name:TEL_CLI;datatype:string,name:IMA_CLI;datatype:string,name:PAIS_CLI;datatype:string,name:SEXO_CLI;datatype:string,name:CLA_CLI;datatype:string" />
-</info>
