@@ -1,0 +1,185 @@
+
+/* ------ [Default Template] NodeFire LightBox CSS Styles - (customize any portion below to suit your needs) ------ */
+
+	/*
+		%% -Basic Info. / Help- %%
+
+			*Turning off word wrapping in your text-editor will make this document easier to read and edit. Use a plain text editor (ANSI)!
+			
+			*Specific lightboxes can be targeted by ID.  Each container in a lightbox is given a unique ID prefixed with the same custom ID you specify to initialze
+			the object or gallery. e.g. you can target the outer content box of a specific lightbox with #myid_box .nflb-contentbox-outer{}, the following ID's are valid...
+			
+				#myid_blockout
+				#myid_load
+				#myid_box
+				#myid_overlay
+			
+			*To style a custom control add '.nflb-control-' before the control name.  e.g. To target a close button defined with the id 'myclose', use
+			'.nflb-control-myclose'. You can futher target controls for a specific lightbox with #myid_box .nflb-control-myclose.
+			
+			*To style custom overlay buttons, add '.nflb-overlay-control-button' before the button name. e.g. To target a play button defined with the
+			id 'myplay', use '.nflb-overlay-control-button-myplay'. You can futher target controls for a specific lightbox... #myid_box .nflb-overlay-control-button-myplay.
+			
+			*Custom controls can be styled for a specific environment.  To target an environment add the class name 'nflb-environmentX'.  e.g. To create a special large button
+			for all mobile devices use...  .nflb-mobile.nflb-control-close {}.  The following environment names are valid..
+			
+				mobile   (Any mobile device including iPad & Android tablets.)
+				smallMobile    (Mobile devices with a screen pixel ratio greater than 1, typically smart phones.)
+				ipad
+				ios
+				android
+				ie, ie7, ie8, ie9
+				firefox
+				chrome
+				safari
+				opera
+				webkit
+				
+			*NodeFire LightBoxes can be embeded inline within the document flow. There are several ways to create an inline lightbox. The easiest method is to create a
+			container HTML element (DIV, UL, etc...) and give it an ID that matches 1 or more frame / gallery ID's (matching ID's can be script or HTML defined with A tags).
+			Below is a basic sample of the typical markup used to include an inline lightbox...
+			
+				<div id="igallery" class="nflb-inline" style="">
+					<a rel="NF.lightBox={id:'igallery'}" href="images_lightbox/mypic1.jpg">pure CSS content</a>
+					<a rel="NF.lightBox={id:'igallery'}" href="images_lightbox/mypic2.jpg">pure CSS content</a>
+				</div>
+				
+			*Use the inline container class name prefixs (.nflb-inline or nflb-inline-js) to custom tailor the look of the inline lightbox / gallery effects.  If you use
+			multiple inline lightboxes you can target specific styles with your ID (e.g. .nflb-inline #my_lightbox_id .nflb-blockout-background)
+			
+	*/
+	
+	
+	
+	
+/*##################################################################################################
+"""""""" NodeFire LighBox [INLINE HTML CONTAINERS ONLY] """"""""
+##################################################################################################*/		
+	
+	
+	/*"""""""" Inline Container - Pure CSS and Script Capable """"""""*/	
+	.nflb-inline {position:relative;width:600px;height:500px;border:2px solid #333;}
+	
+	/*"""""""" Inline Container - Script Capable Browsers Only """"""""*/	
+	.nflb-inline-js {}
+	
+	/*"""""""" Active Styles for Outside Links """"""""*/	
+	.nflb-outside-link-active {color:#f00;}
+	.nflb-outside-link-active img {border-color:#f00;}
+	.nflb-outside-link-active-myid {}
+	
+	/*"""""""" Active Styles for Outside Links [Parent Container] """"""""*/	
+	.nflb-outside-link-parent-active {}
+	.nflb-outside-link-parent-active-myid {}
+	
+	
+/*##################################################################################################
+"""""""" NodeFire LighBox Containers and Blockout Styles """"""""
+##################################################################################################*/	
+	
+	/*"""""""" Base z-index (a default inline z-index of 999999999 is script applied - override below) """"""""*/	
+	.nflb-zindex {z-index:999999999 !important;}
+
+	/*"""""""" Blockout Background (NOTE: Use params.blockoutOpacity in the js settings to define color and opacity styles) """"""""*/	
+	.nflb-blockout-background {}
+
+	/*"""""""" Loading Image """"""""*/	
+	.nflb-loading-image {width:40px;height:40px;background:url(images_lightbox/nf_lb_loading9.gif) no-repeat center center;}
+
+	/*"""""""" Content Box - Outer """"""""*/			
+	.nflb-contentbox-outer {min-width:100px;min-height:80px;z-index:1;background-color:#000;border:1px solid #666;box-shadow:0px 0px 12px #444}
+			
+	/*"""""""" Content Box - Inner """"""""*/
+	.nflb-contentbox-inner {}
+			
+	/*"""""""" Top Bar Controls Container """"""""*/
+	.nflb-topbar-container-offset {margin:2px 0px 0px 0px;}
+	.nflb-topbar-container {padding:9px 0px 7px 0px;}
+	.nflb-topbar-container-inner {}
+
+	/*"""""""" Bottom Bar Controls Container """"""""*/
+	.nflb-bottombar-container-offset {margin:-2px 0px 0px 0px;}
+	.nflb-bottombar-container {padding:7px 0px 10px 0px;}
+	.nflb-bottombar-container-inner {}
+
+	
+
+/*##################################################################################################
+"""""""" Top & Bottom Bar Controls [ALL ENVIRONMENTS] """"""""
+##################################################################################################*/
+
+	/*"""""""" Controls Defaults """"""""*/
+	.nflb-controls {color:#ccc;font-family:Arial;font-size:12px;}
+
+	/*"""""""" Controls - Text """"""""*/
+	.nflb-control-text {font-weight:bold;color:#aaa;}
+	.nflb-control-textindicator {white-space:nowrap;font-size:12px;text-align:center;padding:2px 4px 0px 4px;}
+	.nflb-control-textzoom {font-size:11px;text-align:right;width:90px;padding:2px 5px 0px 0px;white-space:nowrap;}
+	.nflb-control-texttitle {white-space:nowrap;font-size:14px;font-weight:normal;color:#ccc;padding:2px 20px 0px 0px;}
+	
+	/*"""""""" Control Buttons """"""""*/
+	.nflb-control-close {height:18px;padding:0px 24px 0px 0px;background-image:url(images_lightbox/nf_lb_close2hover.gif);background-repeat:no-repeat;background-position:top right;margin:0px 0px 0px 5px;white-space:nowrap;}
+	.nflb-control-close:hover {background-image:url(images_lightbox/nf_lb_close2std.gif);}
+	
+	.nflb-control-expand {height:18px;width:18px;background-image:url(images_lightbox/nf_lb_expandhover.gif);margin:0px 0px 0px 5px;}
+	.nflb-control-expand:hover {background-image:url(images_lightbox/nf_lb_expand.gif);}
+	
+	.nflb-control-navprevious {height:18px;width:18px;background-image:url(images_lightbox/nf_lb_previous2hover.gif);}
+	.nflb-control-navprevious:hover {background-image:url(images_lightbox/nf_lb_previous2std.gif);}
+
+	.nflb-control-navnext {height:18px;width:18px;background-image:url(images_lightbox/nf_lb_next2hover.gif);}
+	.nflb-control-navnext:hover {background-image:url(images_lightbox/nf_lb_next2std.gif);}
+	
+	
+		
+	/*"""""""" Controls - Frame Links """"""""*/
+	.nflb-control-framelinks {margin:0px 0px 0px 0px;}
+	.nflb-control-framelinks-items {padding:1px 4px 1px 4px;margin:1px;text-align:center;border-radius:2px;}
+	body .nflb-control-framelinks-items.nflb-control-framelinks-items-active {background-color:#555;}
+	.nflb-control-framelinks-items:hover {background-color:#333;}
+
+	
+	
+
+/*##################################################################################################
+"""""""" Top & Bottom Bar Controls [MOBILE ENVIRONMENTS - iPad, iPhone, Android, etc...] """"""""
+##################################################################################################*/
+
+	/*"""""""" Control Defaults """"""""*/
+	.nflb-mobile.nflb-controls {}
+
+	/*"""""""" Controls - Text """"""""*/
+	.nflb-mobile.nflb-control-text {font-size:18px;padding:6px 4px 0px 4px;}
+	.nflb-mobile.nflb-control-textindicator {font-size:18px;}
+	.nflb-mobile.nflb-control-texttitle {font-size:22px;color:#999;font-weight:normal;}
+
+	/*"""""""" Control Buttons """"""""*/
+	.nflb-mobile.nflb-control-expand {height:36px;width:36px;background-image:url(images_lightbox/nf_lb_expandhover_big.gif);margin:0px 0px 0px 5px;}
+	.nflb-mobile.nflb-control-expand:hover {background-image:url(images_lightbox/nf_lb_expand_big.gif);}
+		
+	.nflb-mobile.nflb-control-close {height:36px;width:36px;background-image:url(images_lightbox/nf_lb_close2hover_big.gif);}
+	.nflb-mobile.nflb-control-close:hover {background-image:url(images_lightbox/nf_lb_close2std_big.gif);}
+
+	.nflb-mobile.nflb-control-navprevious {height:36px;width:36px;background-image:url(images_lightbox/nf_lb_previous2hover_big.gif)}
+	.nflb-mobile.nflb-control-navprevious:hover {background-image:url(images_lightbox/nf_lb_previous2std_big.gif)}
+	
+	.nflb-mobile.nflb-control-navnext {height:36px;width:36px;background-image:url(images_lightbox/nf_lb_next2hover_big.gif)}
+	.nflb-mobile.nflb-control-navnext:hover {background-image:url(images_lightbox/nf_lb_next2std_big.gif)}
+	
+	/*"""""""" Controls - Frame Links """"""""*/
+	.nflb-mobile.nflb-control-framelinks {margin:3px 12px 0px 12px;}
+	.nflb-mobile.nflb-control-framelinks-items {font-size:22px;font-weight:normal;color:#999b;padding:1px 8px 0px 8px;margin:2px;border-radius:4px;}
+
+
+	
+
+/*##################################################################################################
+"""""""" Overlay Buttons """"""""
+##################################################################################################*/
+
+	.nflb-overlay-background {}
+	.nflb-overlay-control-button-navnext {margin:5px 0px;padding:5px;background-color:#333;background-color:rgba(0,0,0,.5);border-radius:8px;border:2px solid #666;}
+	.nflb-overlay-control-button-navprevious {margin:5px 0px;padding:5px;background-color:#333;background-color:rgba(0,0,0,.5);border-radius:8px;border:2px solid #666;}
+	.nflb-overlay-control-button-navplay {margin:5px 0px;padding:5px;-webkit-tap-highlight-color:rgba(255,0,0,1);}
+	.nflb-overlay-control-button-close {padding:5px;}
+	
