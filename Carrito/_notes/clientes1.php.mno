@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsClientes1" value="name:email;datatype:string,name:nombre;datatype:string,name:pais;datatype:string,name:direccion;datatype:string,name:telefono;datatype:string,name:IMA_CLI;datatype:string" />
+</info>

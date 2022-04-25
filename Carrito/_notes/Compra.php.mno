@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCompra" value="name:nombre;datatype:string,name:cantidad;datatype:int,name:precio;datatype:real,name:subtotal;datatype:real" />
+	<infoitem key="UD_RsTotal" value="name:total;datatype:real" />
+	<infoitem key="UD_Recordset1" value="name:total;datatype:real" />
+</info>

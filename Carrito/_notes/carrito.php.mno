@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rsCarrito" value="name:nombre;datatype:string,name:precio;datatype:real,name:cantidad;datatype:int,name:Subtotal;datatype:real" />
+	<infoitem key="UD_rsTotal" value="name:Total;datatype:real" />
+	<infoitem key="UD_rsClientes" value="name:CED_CLI;datatype:string,name:NOM_CLI;datatype:string,name:APE_CLI;datatype:string,name:DIR_CLI;datatype:string,name:TEL_CLI;datatype:string" />
+</info>
